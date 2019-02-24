@@ -8,7 +8,7 @@ pipeline {
     stages {
          stage('Git clone') {
                  steps {
-                    checkout([$class: 'GitSCM', branches: [[name: "*/$env.GIT_BRANCH"]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/nvaklinov/DevOps.git']]])
+                    checkout([$class: 'GitSCM', branches: [[name: "*/$env.GIT_BRANCH"]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/PetyoKaratov88/FlaskDevops.git']]]) 
           }
         }
 
