@@ -14,7 +14,7 @@ pipeline {
 
          stage ('Build') {
 		 steps {
-		       sh 'cp /var/lib/jenkins/scripts/* . && bash -x script.sh'
+		       sh 'cp /var/lib/jenkins/script/* . && bash -x script.sh'
 	      
                }
               
